@@ -6,6 +6,7 @@ services:
   node-app:
     build:
      context: .
+     image: azundah/node_docker
      args:
       NODE_ENV: production
     environment:
