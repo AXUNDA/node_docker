@@ -5,9 +5,9 @@ services:
       - "3000:80"
   node-app:
     build:
-     context: .
-     image: azundah/node_docker
-     args:
+      image: azundah/node_docker
+      context: .
+      args:
       NODE_ENV: production
     environment:
       - NODE_ENV=production

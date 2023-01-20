@@ -9,7 +9,7 @@ let RedisStore = require("connect-redis")(session)
 let redisClient = redis.createClient({
       host:REDIS_URL,
       port:REDIS_PORT ,
-      // legacyMode:true
+      
 })
 const app = express()
 const connectWithRetry= ()=>{
@@ -52,7 +52,7 @@ app.use(
       })
     )
 app.get("/api/v1",(req, res) => {
-      res.send("<h2>hello world !!!!!!!!!!!</h2>")
+      res.send("<h2>hello world !!!</h2>")
       console.log("we are live ")
 })
 app.use(express.json())
